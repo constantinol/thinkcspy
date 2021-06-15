@@ -46,6 +46,32 @@ To review, the variable ``theSum`` is called the accumulator.  It is initialized
 
 The assignment statement, ``theSum = theSum + aNumber``, updates ``theSum`` each time through the loop.  This accumulates the running total.  Finally, we return the value of the accumulator.
 
+**Check Your Understanding**
+
+.. mchoice:: mc07_8_2
+    :practice: T
+    :answer_a: lines 2-5
+    :answer_b: lines 3-5
+    :answer_c: lines 3-4
+    :answer_d: line 5
+    :correct: c
+    :feedback_a: Incorrect. This includes the loop body and the iterator.
+    :feedback_b: Incorrect. This included the inner loop's body as well.
+    :feedback_c: Correct! This encompasses the outer loop's body.
+    :feedback_d: Incorrect. This is just the inner loop's body.
+ 
+    The following code contains an nested loop.  What lines are the **loop body** for the outer *for* loop?
+ 
+
+    .. activecode:: ch07_8_2
+
+        def printnums(x,y):
+            for h in range(x):
+                print(h)
+                for i in range(y):
+                    print(i)
+
+        printnums(5,2)
 
 
 
